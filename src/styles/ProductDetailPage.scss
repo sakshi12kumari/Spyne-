@@ -1,0 +1,78 @@
+/* Styling for Car Detail Page */
+
+.car-detail-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .car-detail-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .car-info {
+    margin-bottom: 20px;
+  
+    .car-details {
+      p {
+        margin: 5px 0;
+      }
+    }
+  
+    .edit-fields {
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      textarea {
+        resize: vertical;
+        height: 150px;
+      }
+    }
+  }
+  
+  .car-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+  
+    button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+  
+      .delete-btn {
+        background-color: #dc3545;
+        &:hover {
+          background-color: #c82333;
+        }
+      }
+    }
+  }
+  

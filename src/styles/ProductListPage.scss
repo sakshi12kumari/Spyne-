@@ -1,0 +1,181 @@
+// @import "./variables.scss";
+// @import "./breakpoints.scss";
+
+// .product-list {
+//   width: 100vw;
+//   height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   padding: 20px;
+//   background: url("../../public/Images/creation.jpeg") center;
+//   background-size: cover;
+
+//   .search-bar {
+//     position: relative;
+//     width: 60%;
+//     max-width: 400px;
+//     margin-bottom: 20px;
+
+//     input {
+//       width: 100%;
+//       padding: 12px 40px 12px 12px; // Extra space for the icon
+//       border: 1px solid #ccc;
+//       border-radius: 5px;
+//       font-size: 1rem;
+//       text-align: center;
+
+//       &::placeholder {
+//         color: #aaa;
+//         text-align: center;
+//       }
+//     }
+
+//     .search-icon {
+//       position: absolute;
+//       top: 50%;
+//       right: 15px; // Position icon on the right within the input field
+//       transform: translateY(-50%);
+//       color: #555;
+//       font-size: 1.2rem;
+//       pointer-events: none; // Allows clicking on the input area without affecting the icon
+//     }
+//   }
+
+//   .car-list {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+//     gap: 20px;
+//     width: 100%;
+//     max-width: 1200px;
+//     padding: 20px;
+
+//     .car-item {
+//       padding: 20px;
+//       background-color: rgba(255, 255, 255, 0.8);
+//       border-radius: 10px;
+//       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+//       cursor: pointer;
+//       transition: transform 0.2s;
+
+//       h3 {
+//         color: #333;
+//         text-align: center;
+//         font-size: 1.2rem;
+//         margin: 10px 0;
+//       }
+
+//       &:hover {
+//         transform: scale(1.05);
+//       }
+//     }
+//   }
+// }
+/* Styling for the Product List Page */
+
+.product-list-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+  }
+
+  .user-id {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  /* Search Bar */
+  .search-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px; /* Space for navbar */
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      padding: 8px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+      input {
+        border: none;
+        outline: none;
+        padding: 8px;
+        font-size: 1rem;
+        flex-grow: 1;
+      }
+
+      .search-icon {
+        font-size: 1.5rem;
+        color: #333;
+        cursor: pointer;
+      }
+    }
+
+    .create-product-btn {
+      margin-left: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  /* Car List */
+  .car-list {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .car-item {
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: #f1f1f1;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      p {
+        margin: 5px 0;
+      }
+    }
+  }
+}
